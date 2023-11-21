@@ -13,13 +13,10 @@ const verifyToken = (req, res, next) => {
     const decoded = jwt.verify(token, secretKey);
     req.userId = decoded.userId;
 
-    const expirationTime = decoded.exp * 1000;
-    const currentTime = Date.now();
-    const timeUntilExpiration = expirationTime - currentTime;
+    const expirationTime = decoded.exp;
+    const currentTime = Math.floor(Date.now() / 1000);
 
-    const expirationThreshold = 1 * 60 * 1000;
-
-    if (timeUntilExpiration < expirationThreshold) {
+    if (currentTime > expirationTime) {
       return res.status(401).json({ mensagem: 'Sessão inválida' });
     }
 
