@@ -1,12 +1,20 @@
 const express = require('express');
 const UserService = require('../services/usuarioService');
 const { verifyToken } = require('../middlewares/verifyToken');
+const { requiredFields } = require('../middlewares/validations')
 
 const router = express.Router();
 
 router.post('/usuario', async (req, res) => {
   try {
     const userData = req.body;
+
+    const validations = await requiredFields(userData);
+
+    if (validations) {
+      return res.status(400).json(validations);
+    }
+
     const user = await UserService.createUser(userData);
 
     if(user.mensagem) {
