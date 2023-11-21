@@ -5,6 +5,10 @@ const { requiredFields } = require('../middlewares/validations');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.send('Api funcionando!');
+});
+
 router.post('/usuario', async (req, res) => {
   try {
     const userData = req.body;
