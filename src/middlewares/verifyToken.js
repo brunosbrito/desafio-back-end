@@ -14,9 +14,9 @@ const verifyToken = (req, res, next) => {
     req.userId = decoded.userId;
 
     const expirationTime = decoded.exp;
-    const currentTime = Math.floor(Date.now() / 1000);
-
-    if (currentTime > expirationTime) {
+    const currentTimeInSeconds = Math.floor(Date.now() / 1000);
+    
+    if (currentTimeInSeconds > expirationTime) {
       return res.status(401).json({ mensagem: 'Sessão inválida' });
     }
 
