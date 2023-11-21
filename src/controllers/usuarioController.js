@@ -21,8 +21,6 @@ router.post('/usuario', async (req, res) => {
           });
     }
 
-    
-
   } catch (error) {
     res.status(500).json({ mensagem: 'Erro interno ao criar usuario' });
   }
