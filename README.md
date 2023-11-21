@@ -1,4 +1,30 @@
-# Desafio Back end (API)
+# Desafio Técnico - Scribo
+
+Este é um projeto que realiza o desafio proposto pela Scribo. O desafio consiste em criar uma api para cadastrar usuaio, fazer login e buscar o usuario.
+
+## Como Rodar o Desafio
+
+Siga as instruções abaixo para rodar o desafio em seu ambiente local:
+
+1. **Instale o Node.js:**
+   Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [https://nodejs.org/](https://nodejs.org/).
+
+2. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/brunosbrito/desafio-back-end.git
+   cd desafio-back-end
+
+3. **Instale as dependências:**
+   ```bash
+    npm install
+    
+4. **Rode o desafio:**
+   ```bash
+    npm start
+    
+4. **para rodar os teste:**
+   ```bash
+    npm test
 
  *URL BASE: https://desafio-back-end-80f68e3e50f3.herokuapp.com/*
 
