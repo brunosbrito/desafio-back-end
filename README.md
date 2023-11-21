@@ -26,6 +26,8 @@ Siga as instruções abaixo para rodar o desafio em seu ambiente local:
    ```bash
     npm test
 
+## Utilizar a API
+
  *URL BASE: https://desafio-back-end-80f68e3e50f3.herokuapp.com/*
 
 ## 1 - Criar Usuario - endpoint POST `/usuario`
