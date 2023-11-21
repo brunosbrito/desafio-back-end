@@ -9,7 +9,7 @@ describe('POST /login', () => {
       .post('/login')
       .send({
         email: 'bruno@teste.com',
-        senha: '12345678'
+        senha: '123456'
       });
 
     expect(response.status).to.equal(201);
