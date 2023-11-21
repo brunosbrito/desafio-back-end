@@ -1,7 +1,7 @@
 const express = require('express');
 const UserService = require('../services/usuarioService');
 const { verifyToken } = require('../middlewares/verifyToken');
-const { requiredFields } = require('../middlewares/validations')
+const { requiredFields } = require('../middlewares/validations');
 
 const router = express.Router();
 
