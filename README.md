@@ -76,7 +76,7 @@ Siga as instruções abaixo para rodar o desafio em seu ambiente local:
     }
   ```
   
-   ## 3 - Buscar usuario por id - endpoint POST `/usuari/id`
+   ## 3 - Buscar usuario por id - endpoint POST `/usuario/id`
 
 - Endpoint `/login`;
 - O endpoint para buscar o usuario deve ser no formato:
